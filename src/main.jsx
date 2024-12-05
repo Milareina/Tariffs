@@ -1,10 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
-import "./index.scss";
 
-ReactDOM.createRoot(document.querySelector(".heroes-gallery")).render(
-    <React.StrictMode>
-        <App />
-    </React.StrictMode>
-);
+import ReactDOM from "react-dom/client"; 
+import "./styles/index.scss";
+import App from "./App";
+
+const root = ReactDOM.createRoot(document.getElementById("root")); 
+root.render(<App />); 

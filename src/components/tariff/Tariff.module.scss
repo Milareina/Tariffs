@@ -1,0 +1,75 @@
+.tariff {
+  width: 200px;
+  text-align: center;
+  color: #f9f7f7;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2px;
+  height: auto;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.name,
+.price,
+.speed,
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.name {
+  background-color: rgb(79, 211, 211);
+  height: 50px;
+}
+
+.price {
+  background-color: #1b777b;
+  height: 100px;
+  .amount {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  .perMonth {
+    font-size: 1rem;
+  }
+}
+
+.speed {
+  height: 50px;
+  p {
+    font-size: 0.8rem;
+    color: #aaa7a7;
+  }
+}
+
+.description {
+  background-color: rgb(240, 242, 231);
+  height: 60px;
+  p {
+    font-size: 0.8rem;
+    color: #aaa7a7;
+  }
+}
+
+.clicked {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.enlargeOnHover {
+  &:hover {
+    transform: scale(1.2);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    border: 2px solid #aaa7a7;
+  }
+}

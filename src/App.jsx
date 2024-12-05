@@ -1,12 +1,16 @@
-import HeroGallery from "./components/HeroGallery";
+import Tariffs from "./components/Tariffs";
 
 const App = () => {
-    return (
-        <div className="heroes-gallery__content-container">
-            <h1 className="heroes-gallery__title">Галерея супергероев</h1>
-            <HeroGallery />
-        </div>
-    );
+  return (
+    <div>
+      <header>
+        <h1>Тарифы</h1>
+      </header>
+      <main>
+        <Tariffs />
+      </main>
+    </div>
+  );
 };
 
 export default App;
